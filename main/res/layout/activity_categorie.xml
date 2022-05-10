@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".Categorie">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="341dp"
+            android:layout_height="193dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="399dp"
+        android:layout_height="399dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#2AEF8C8C"
+        app:columnCount="2"
+        app:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="15dp"
+            android:background="#C9FFFFFF"
+            app:cardBackgroundColor="#65C8A0A0"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2AEF8C8C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hp_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/hp1" />
+
+                <TextView
+                    android:id="@+id/marq3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="HP"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/del"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="15dp"
+            android:background="#C9FFFFFF"
+            app:cardBackgroundColor="#65C8A0A0"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2AEF8C8C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/del_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/del6" />
+
+                <TextView
+                    android:id="@+id/marq4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="DEL"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lenovo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="15dp"
+            android:background="#C9FFFFFF"
+            app:cardBackgroundColor="#65C8A0A0"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2AEF8C8C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lenovo_image"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/leno2" />
+
+                <TextView
+                    android:id="@+id/marq5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Lenovo"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mac"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_margin="15dp"
+            android:background="#C9FFFFFF"
+            app:cardBackgroundColor="#65C8A0A0"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2AEF8C8C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mac_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/mac5" />
+
+                <TextView
+                    android:id="@+id/marq6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="MAC OS"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
